@@ -3,108 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steph Digital Solutions | Votre activité, notre solution digitale</title>
-<meta name="description" content="Steph Digital Solutions accompagne les entreprises au Cameroun avec des sites web, solutions digitales, communication et logiciels.">
+<meta name="description" content="Steph Digital Solutions — création de sites web, logiciels, communication digitale et design au Cameroun.">
+<title>Steph Digital Solutions | Votre activité, notre solution digitale.</title>
 <style>
-:root{--navy:#06172d;--blue:#0b8cff;--cyan:#19c8ff;--white:#fff;--light:#f4f8fc;--text:#10243d}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.6}
-header{background:linear-gradient(135deg,#041226,#0b2e55);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 20px #0002}
-.nav{max-width:1120px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:900;font-size:23px;letter-spacing:.5px}.logo span{color:var(--cyan)}
-nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px;font-weight:700}
-.hero{background:linear-gradient(135deg,#06172d 0%,#0a4777 60%,#0b8cff 140%);color:white;padding:90px 22px 100px}
-.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
-.badge{display:inline-block;border:1px solid #ffffff55;background:#ffffff12;padding:7px 13px;border-radius:30px;margin-bottom:18px;font-size:13px}
-h1{font-size:clamp(42px,6vw,68px);line-height:1.03;margin-bottom:20px}
-h1 span{color:var(--cyan)}.hero p{font-size:19px;max-width:650px;color:#e5f4ff}
-.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block}
-.primary{background:white;color:#07538a}.secondary{border:1px solid #ffffff66;color:white}
-.mockup{background:#07182b;border:1px solid #ffffff33;border-radius:22px;padding:25px;box-shadow:0 20px 60px #001b3c88}
-.screen{background:white;border-radius:14px;padding:28px;color:var(--text);min-height:270px}
-.screen .mini{font-size:12px;color:#0b8cff;font-weight:800}.screen h2{margin:12px 0}.bar{height:10px;background:#dce8f3;border-radius:10px;margin:10px 0}.bar.w{width:78%}.bar.s{width:55%}
-section{padding:80px 22px}.container{max-width:1120px;margin:auto}
-.center{text-align:center}.eyebrow{color:#0b8cff;font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:2px}
-h2{font-size:38px;margin:10px 0 14px}.lead{max-width:700px;margin:0 auto 40px;color:#587087}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.card{padding:25px;border:1px solid #dce8f2;border-radius:16px;background:white;box-shadow:0 8px 25px #153c5d0c}
-.icon{font-size:30px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#60768b;font-size:14px}
-.dark{background:var(--navy);color:white}.dark .lead{color:#b8cbe0}
-.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.price{background:white;color:var(--text);border-radius:16px;padding:25px}.price strong{font-size:28px;color:#087bd1}.price ul{list-style:none;margin:16px 0}.price li{margin:8px 0;font-size:14px}.price li:before{content:"✓ ";color:#08a45c;font-weight:bold}
-.contact{background:linear-gradient(135deg,#eef8ff,#fff);text-align:center}
-.contact-box{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:25px}
-footer{background:#031021;color:#b6c6d8;text-align:center;padding:28px 20px;font-size:13px}
-@media(max-width:850px){.hero-inner{grid-template-columns:1fr}.grid,.prices{grid-template-columns:repeat(2,1fr)}nav{display:none}}
-@media(max-width:520px){section{padding:60px 18px}.grid,.prices{grid-template-columns:1fr}h2{font-size:31px}.hero{padding-top:65px}}
+:root{--navy:#07111f;--navy2:#0d1b2f;--blue:#1683ff;--cyan:#22c7ff;--white:#fff;--muted:#aab7c8;--line:rgba(255,255,255,.10);--card:rgba(255,255,255,.055)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.4px}
+.logo-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#06101d;font-weight:1000}
+.logo span span{color:var(--cyan)}
+nav{display:flex;gap:24px;align-items:center}
+nav a{color:#d8e2ef;font-size:.94rem}
+nav a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:800;border:1px solid transparent;transition:.2s}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#06101d}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-outline{border-color:var(--line);background:rgba(255,255,255,.04)}
+.btn-outline:hover{border-color:rgba(34,199,255,.55)}
+.hero{padding:92px 0 70px;background:radial-gradient(circle at 80% 20%,rgba(34,199,255,.16),transparent 32%),radial-gradient(circle at 10% 30%,rgba(22,131,255,.13),transparent 28%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(34,199,255,.25);border-radius:999px;background:rgba(34,199,255,.07);color:#8de5ff;font-weight:800;font-size:.82rem;margin-bottom:18px}
+h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.05;letter-spacing:-2px}
+h1 em{font-style:normal;color:var(--cyan)}
+.hero p{margin:22px 0;color:var(--muted);font-size:1.08rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid var(--line);padding:28px;border-radius:24px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.hero-card .big{font-size:3.5rem;font-weight:950;color:var(--cyan);line-height:1}
+.hero-card h3{margin:12px 0 4px;font-size:1.3rem}
+.hero-card p{margin:0;font-size:.95rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.stat{padding:15px;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.15)}
+.stat b{display:block;font-size:1.2rem}.stat small{color:var(--muted)}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-head .kicker{color:var(--cyan);font-weight:900;text-transform:uppercase;font-size:.78rem;letter-spacing:1.5px}
+.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:8px 0}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--card);transition:.2s}
+.card:hover{transform:translateY(-5px);border-color:rgba(34,199,255,.35)}
+.icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(34,199,255,.1);font-size:1.4rem;margin-bottom:16px}
+.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:.94rem}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price{position:relative}
+.price.featured{border-color:rgba(34,199,255,.55);box-shadow:0 15px 50px rgba(34,199,255,.08)}
+.tag{position:absolute;right:18px;top:18px;background:var(--cyan);color:#06101d;padding:5px 9px;border-radius:999px;font-size:.7rem;font-weight:900}
+.price strong{font-size:2rem}.price .fcfa{color:var(--muted);font-size:.85rem}
+.price ul{list-style:none;margin:18px 0 22px;color:#dce6f2}.price li{margin:9px 0}.price li::before{content:"✓";color:var(--cyan);font-weight:900;margin-right:8px}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.contact-main{padding:32px;border-radius:24px;background:linear-gradient(135deg,#0e2945,#0b1727);border:1px solid var(--line)}
+.contact-main p{color:var(--muted);margin:10px 0 22px}
+.contact-list{display:grid;gap:12px}.contact-item{padding:15px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035)}
+.contact-item small{display:block;color:var(--muted)}.contact-item b{color:#fff}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#06101d;font-size:1.7rem;font-weight:900;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero-grid,.contact-box{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}nav{display:none}}
+@media(max-width:600px){.hero{padding-top:65px}.grid,.pricing{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero-card{margin-top:10px}section{padding:60px 0}}
 </style>
 </head>
 <body>
 <header>
-<div class="nav">
-<div class="logo">S<span>DS</span> · STEPH DIGITAL SOLUTIONS</div>
-<nav><a href="#services">Services</a><a href="#packs">Packs</a><a href="#contact">Contact</a></nav>
+<div class="container nav">
+<a class="logo" href="#accueil"><div class="logo-mark">SDS</div><div>STEPH <span>DIGITAL SOLUTIONS</span></div></a>
+<nav><a href="#services">Services</a><a href="#packs">Packs</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-primary" href="https://wa.me/237681653834?text=Bonjour%20Steph%20Digital%20Solutions%2C%20je%20souhaite%20un%20devis." target="_blank">Demander un devis</a>
 </div>
 </header>
 
-<section class="hero">
-<div class="hero-inner">
+<main>
+<section class="hero" id="accueil">
+<div class="container hero-grid">
 <div>
-<div class="badge">🇨🇲 Solutions digitales au Cameroun</div>
-<h1>Votre activité,<br><span>notre solution digitale.</span></h1>
-<p>Nous aidons les entrepreneurs et entreprises à améliorer leur présence en ligne, gagner en visibilité et automatiser leur activité grâce à des solutions simples et modernes.</p>
-<div class="btns">
-<a class="btn primary" href="#contact">Demander un devis</a>
-<a class="btn secondary" href="#services">Découvrir nos services</a>
+<span class="badge">🇨🇲 Solutions digitales au Cameroun</span>
+<h1>Votre activité,<br><em>notre solution digitale.</em></h1>
+<p>Nous aidons les entrepreneurs, commerces et petites entreprises à développer leur présence en ligne avec des sites web, logiciels, visuels et solutions numériques simples et efficaces.</p>
+<div class="actions">
+<a class="btn btn-primary" href="#contact">Parler de mon projet →</a>
+<a class="btn btn-outline" href="#services">Voir nos services</a>
 </div>
 </div>
-<div class="mockup"><div class="screen">
-<div class="mini">STEPH DIGITAL SOLUTIONS</div>
-<h2>Construisons votre présence digitale.</h2>
-<div class="bar"></div><div class="bar w"></div><div class="bar s"></div>
-<p style="margin-top:18px;font-size:14px">Sites web • Réseaux sociaux • Graphisme • Logiciels</p>
-</div></div>
+<div class="hero-card">
+<div class="big">SDS</div>
+<h3>Une présence digitale professionnelle</h3>
+<p>Des solutions adaptées à votre budget et à vos objectifs, avec un accompagnement de proximité.</p>
+<div class="stats"><div class="stat"><b>Web</b><small>Sites modernes</small></div><div class="stat"><b>Design</b><small>Visuels pro</small></div><div class="stat"><b>IT</b><small>Solutions utiles</small></div></div>
+</div>
 </div>
 </section>
 
 <section id="services">
 <div class="container">
-<div class="center"><div class="eyebrow">Nos services</div><h2>Des solutions adaptées à votre budget</h2><p class="lead">Du petit commerce à la PME, nous vous accompagnons avec des prestations pratiques et accessibles.</p></div>
+<div class="section-head"><div class="kicker">Nos services</div><h2>Tout pour développer votre activité</h2><p>Des services digitaux pensés pour être accessibles, professionnels et faciles à utiliser.</p></div>
 <div class="grid">
-<div class="card"><div class="icon">🌐</div><h3>Sites web</h3><p>Sites vitrines, e-commerce et sites sur mesure, rapides et adaptés au mobile.</p></div>
-<div class="card"><div class="icon">📱</div><h3>Réseaux sociaux</h3><p>Création de contenus, gestion de pages et amélioration de votre visibilité.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>Graphisme</h3><p>Affiches, flyers, cartes de visite, catalogues et visuels professionnels.</p></div>
-<div class="card"><div class="icon">💻</div><h3>Logiciels</h3><p>Développement de petits logiciels, maintenance et assistance informatique.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>Sites web</h3><p>Sites vitrines, pages professionnelles et sites responsives adaptés au mobile.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Réseaux sociaux</h3><p>Création et optimisation de pages Facebook, Instagram et catalogues WhatsApp.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Design graphique</h3><p>Affiches, flyers, cartes de visite, visuels publicitaires et identité digitale.</p></div>
+<div class="card"><div class="icon">💻</div><h3>Logiciels & IT</h3><p>Petits logiciels de gestion, maintenance, assistance informatique et solutions sur mesure.</p></div>
 </div>
 </div>
 </section>
 
-<section id="packs" class="dark">
+<section id="packs">
 <div class="container">
-<div class="center"><div class="eyebrow">Nos packs</div><h2>Commencez simplement</h2><p class="lead">Des offres de départ à ajuster selon les besoins réels de votre activité.</p></div>
-<div class="prices">
-<div class="price"><h3>Découverte</h3><strong>2 000 FCFA</strong><ul><li>1 visuel professionnel</li><li>Livraison rapide</li><li>Retouches incluses</li></ul><a class="btn primary" href="#contact">Choisir</a></div>
-<div class="price"><h3>Business</h3><strong>50 000 FCFA/mois</strong><ul><li>Gestion réseaux sociaux</li><li>4 publications/semaine</li><li>Visuels inclus</li><li>Rapport mensuel</li></ul><a class="btn primary" href="#contact">Choisir</a></div>
-<div class="price"><h3>Pro</h3><strong>75 000 FCFA</strong><ul><li>Site vitrine 5 pages</li><li>Responsive mobile/PC</li><li>Formation de prise en main</li><li>Assistance de départ</li></ul><a class="btn primary" href="#contact">Choisir</a></div>
-<div class="price"><h3>Premium</h3><strong>150 000 FCFA</strong><ul><li>Site web complet</li><li>Réseaux sociaux</li><li>Création de contenus</li><li>Maintenance 1 mois</li></ul><a class="btn primary" href="#contact">Choisir</a></div>
+<div class="section-head"><div class="kicker">Nos packs</div><h2>Une offre pour chaque besoin</h2><p>Les tarifs sont indicatifs et peuvent être adaptés selon votre projet.</p></div>
+<div class="pricing">
+<div class="card price"><h3>Découverte</h3><strong>2 000</strong> <span class="fcfa">FCFA</span><ul><li>1 visuel professionnel</li><li>Livraison numérique</li><li>Petites corrections</li></ul><a class="btn btn-outline" href="#contact">Choisir</a></div>
+<div class="card price featured"><span class="tag">POPULAIRE</span><h3>Business</h3><strong>50 000</strong> <span class="fcfa">FCFA</span><ul><li>Présence web professionnelle</li><li>Page entreprise</li><li>Conseils digitaux</li></ul><a class="btn btn-primary" href="#contact">Choisir</a></div>
+<div class="card price"><h3>Pro</h3><strong>75 000</strong> <span class="fcfa">FCFA</span><ul><li>Site web complet</li><li>Design responsive</li><li>Accompagnement au lancement</li></ul><a class="btn btn-outline" href="#contact">Choisir</a></div>
 </div>
 </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="apropos">
 <div class="container">
-<div class="eyebrow">Parlons de votre projet</div>
-<h2>Prêt à passer au digital ?</h2>
-<p class="lead">Décrivez-nous votre besoin et recevez une proposition adaptée.</p>
+<div class="section-head"><div class="kicker">À propos</div><h2>Steph Digital Solutions</h2><p>Une agence digitale orientée résultats, avec une approche simple : comprendre votre besoin, proposer une solution claire et vous accompagner jusqu'à la mise en ligne.</p></div>
+<div class="grid">
+<div class="card"><h3>🎯 Simplicité</h3><p>Des outils compréhensibles et adaptés à votre activité.</p></div>
+<div class="card"><h3>⚡ Réactivité</h3><p>Un échange direct pour avancer rapidement sur votre projet.</p></div>
+<div class="card"><h3>💡 Innovation</h3><p>Des solutions modernes pour vous aider à vous démarquer.</p></div>
+<div class="card"><h3>🇨🇲 Proximité</h3><p>Des services pensés pour les entrepreneurs et entreprises au Cameroun.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
 <div class="contact-box">
-<a class="btn primary" href="https://wa.me/237681653834">💬 WhatsApp</a>
-<a class="btn primary" href="mailto:stephanetagne99@gmail.com">✉️ Email</a>
+<div class="contact-main"><div class="kicker">Contact</div><h2>Parlons de votre projet</h2><p>Expliquez-nous ce dont vous avez besoin. Nous vous répondrons directement.</p><div class="actions"><a class="btn btn-primary" href="https://wa.me/237681653834?text=Bonjour%20Steph%20Digital%20Solutions%2C%20je%20souhaite%20un%20devis." target="_blank">💬 WhatsApp</a><a class="btn btn-outline" href="mailto:stephanetagne99@gmail.com">✉️ E-mail</a></div></div>
+<div class="contact-list">
+<div class="contact-item"><small>WhatsApp</small><b>+237 681 653 834</b></div>
+<div class="contact-item"><small>E-mail</small><b>stephanetagne99@gmail.com</b></div>
+<div class="contact-item"><small>Zone de service</small><b>Cameroun 🇨🇲 — à distance et sur rendez-vous</b></div>
 </div>
-<p style="margin-top:20px;font-size:13px;color:#6b7f92">Contactez-nous directement sur WhatsApp ou par e-mail pour votre projet.</p>
+</div>
 </div>
 </section>
+</main>
 
-<footer>© 2026 Steph Digital Solutions — Yaoundé, Cameroun · Votre activité, notre solution digitale.</footer>
+<a class="whatsapp" href="https://wa.me/237681653834?text=Bonjour%20Steph%20Digital%20Solutions%2C%20je%20souhaite%20un%20devis." target="_blank" aria-label="Contacter sur WhatsApp">✆</a>
+<footer><div class="container footer-row"><div>© 2026 Steph Digital Solutions</div><div>Votre activité, notre solution digitale. 🇨🇲</div></div></footer>
 </body>
 </html>
